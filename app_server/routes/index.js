@@ -10,3 +10,4 @@ router.get('/mekan/yorum/yeni', ctrlMekanlar.yorumEkle);
 router.get('/hakkinda', ctrlDigerleri.hakkinda);
 
 module.exports = router;
+//Burası Odev3 Branch
