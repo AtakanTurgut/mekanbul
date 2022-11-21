@@ -1,0 +1,10 @@
+# MekanBul Rest Api Adresleri
+---
+1. [Girilen Konum Civarındaki Mekanları Listele](https://mekanbul5.atakanturgut.repl.co/api/mekanlar?enlem=37.83226584629666&boylam=30.524732239878013)
+![](/resimler/EnlemBoylamaGoreMekanGetir.PNG)
+
+2. [Mekan ID ile Mekan Bilgilerini Getir](https://mekanbul5.atakanturgut.repl.co/api/mekanlar/63793ce7e29d2beaf19088c8)
+![](/resimler/MekanIDileMekanBilgileriGetir.PNG)
+
+2. [Bir Mekana Ait Belirli Bir Yorumu Getir](https://mekanbul5.atakanturgut.repl.co/api/mekanlar/63793ce7e29d2beaf19088c8/yorumlar/63793cf11301aeae8ea45aa9)
+![](/resimler/BirMekanaAitBelirliBirYorumuGetir.PNG)
