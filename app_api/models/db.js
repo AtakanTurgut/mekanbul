@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 require("./mekansema");
-//var dbURI = "mongodb://localhost/mekanbul";
-var dbURI= "mongodb+srv://atakan:1234@mekanbul.3u2lk3r.mongodb.net/mekanbul?retryWrites=true&w=majority";
+var dbURI = "mongodb://localhost/mekanbul";
+//var dbURI= "mongodb+srv://atakan:1234@mekanbul.3u2lk3r.mongodb.net/mekanbul?retryWrites=true&w=majority";
 mongoose.connect(dbURI);
 
 function kapat(msg, callback) {
@@ -22,7 +22,7 @@ mongoose.connection.on("connected", function() {
 });
 
 mongoose.connection.on("disconnected", function() {
-    console.log(dbURI + " adresindekii veritabanı bağlantısı koptu! \n")
+    console.log(dbURI + " adresindeki veritabanı bağlantısı koptu! \n")
 });
 
 mongoose.connection.on("error", function() {
