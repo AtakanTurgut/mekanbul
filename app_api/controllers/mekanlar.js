@@ -173,4 +173,3 @@ module.exports = {
     mekanlariListele,
     mekanSil
 }
-//
