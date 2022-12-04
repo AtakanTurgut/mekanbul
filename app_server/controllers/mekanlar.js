@@ -23,7 +23,7 @@ var mesafeyiFormatla = function(mesafe) {
 var anaSayfaOlustur = function(res, mekanListesi) {
     var mesaj;
     if (!(mekanListesi instanceof Array)) {
-        mesaj = "API HATASI: Birşeyler ters gitti!";
+        mesaj = "API HATASI: Bir şeyler ters gitti!";
         mekanListesi = [];
     } else {
         if (!mekanListesi.length) {
