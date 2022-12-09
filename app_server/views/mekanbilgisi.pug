@@ -36,14 +36,15 @@ block content
             .panel-heading
               h2.panel-title Konum Bilgisi
             .panel-body
-              -var enlem = mekanDetay.koordinat.enlem //
+              -var enlem = mekanDetay.koordinat.enlem
               -var boylam = mekanDetay.koordinat.boylam
               img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center='+enlem+','+boylam+'&zoom=12&size=600x400&markers='+enlem+','+boylam+'&key=AIzaSyCmmKygTpBzHGOZEciJpAdxC9v_tWHagnE')
   .row
     .col-xs-12 
       .panel.panel-primary 
         .panel-heading 
-          a.btn.btn-default.pull-right(href='/mekan/yorum/yeni') Yorum Ekle
+          -var mekanid=mekanDetay._id
+          a.btn.btn-default.pull-right(href='/mekan/'+mekanid+'/yorum/yeni') Yorum Ekle
           h2.panel-title Müşteri Yorumları
         .panel-body.review-container 
           each yorum in mekanDetay.yorumlar
